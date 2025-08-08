@@ -1,12 +1,10 @@
-<div class="grid grid-cols-3">  
-    <app-product></app-product>
-    <app-product></app-product>
-    <app-product></app-product>
-    <app-product></app-product>
-    <app-product></app-product>
-    <app-product></app-product>
+<div class="grid grid-cols-3 gap-8">  
+    <app-product [title]="'Product 1'" [price] = "17" [img]="'https://picsum.photos/200/300?random?r=21'" (addToCart)="fromChild($event)"></app-product>
+    <app-product [title]="'Product 2'" [price] = "18" [img]="'https://picsum.photos/200/300?random=1r=22'"></app-product>
+    <app-product [title]="'Product 3'" [price] = "19" [img]="'https://picsum.photos/200/300?random=1r=23'"></app-product>
+    <app-product [title]="'Product 4'" [price] = "20" [img]="'https://picsum.photos/200/300?random=1r=24'"></app-product>
+    <app-product [title]="'Product 5'" [price] = "721" [img]="'https://picsum.photos/200/300?random=1r=25'"></app-product>
 </div>
-
 
 <!doctype html>
 <html>
