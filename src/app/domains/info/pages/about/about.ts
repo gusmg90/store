@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
-import { Counter } from '../../../shared/components/counter/counter';
+import { Counter } from './../../../shared/components/counter/counter';
 import { signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [CommonModule, Counter],
   templateUrl: './about.html',
   styleUrl: './about.css'
 })
 export class About {
-duration = signal(100);
+duration = signal(1000);
 message = signal('hola');
 changeDuration(event: Event) {
   const input = event.target as HTMLInputElement;

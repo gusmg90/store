@@ -12,13 +12,19 @@ export class Counter {
 
   constructor() {
     //NO ASYNC
+    //before render
     console.log('constructor');
     console.log('-'.repeat(10));
   }
 
   
     ngOnChanges(changes: SimpleChanges) {
-        console.log('Changes detected:', changes);
+      //antes y durante el evento
+        console.log('nfgOnChanges:');
+         console.log('nfgOnChanges:');
+        console.log('-'.repeat(10));
+        console.log(changes);
+
     }
 
 ngOnInit()
